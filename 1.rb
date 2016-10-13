@@ -1,9 +1,23 @@
-puts "Say something to Qwinix!"
-something = gets.chomp
-while something != "BYE"
-    if something == something.upcase
-      puts "NO, NOT SINCE 20" + (rand(11..16)).to_s + "!"
-    else
-      puts "HUH? SPEAK UP!"
-    end
-end
+# 1. Let's say I have an array as shown below
+# a. array = ["98", "10", "1", "22", "8", "4", "67", "109"]
+# b. Sort them, so that we get to see them in ascending and descending order.
+
+
+
+# array = ["98", "10", "1", "22", "8", "4", "67", "109"]
+# a=array.sort
+# puts a
+
+
+ array = ["98", "10", "1", "22", "8", "4", "67", "109"]
+ newArray=[]	
+ ascendingArray=[]
+ array.each do |n|	
+ 	n=n.to_i	
+ 	newArray.push(n)
+ end
+ 	newArray.sort!
+ 	puts "ascending  #{ascendingArray}"
+
+
+

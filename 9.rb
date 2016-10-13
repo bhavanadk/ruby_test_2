@@ -10,4 +10,40 @@
 # ‘wicketsTaken’ and print the same.
 
 class Player
+	def details(name,age, Matches Played, Player Type)
+		@name=name
+		@age=age
+		@Matches_Played=Matches_Played
+		@Player_Type=Player_Type
+		
+		puts "name=#{name}"
+		puts "age= #{age}"
+		puts "Matches_Played= #{Matches_Played}"
+		puts "Player_Type= #{Player_Type}"
+		
+	end	
+
 	
+end
+
+class Batsman < Player
+	def runsScored
+
+	end
+
+end
+class Bowler < Player
+	def wicketsTaken
+		
+	end
+
+end
+
+
+puts "=========Batsman details========"
+b=Batsman.new
+b.details("a","20","6","half spin")
+
+puts "=========Bowler details========="
+b=Bowler.new
+b.details("b","24","3","full spin")
